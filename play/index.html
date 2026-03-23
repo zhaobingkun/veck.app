@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Play Veck.io in Fullscreen | veck.app</title>
+  <meta name="description" content="Play Veck.io in embedded or fullscreen mode. Quick launch, low friction, and direct access from veck.app.">
+  <link rel="canonical" href="https://veck.app/play/">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Play Veck.io in Fullscreen | veck.app">
+  <meta property="og:description" content="Launch Veck.io instantly with fullscreen support.">
+  <meta property="og:url" content="https://veck.app/play/">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <link rel="icon" type="image/svg+xml" href="/assets/img/veck-icon.svg">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://veck.app/"},
+        {"@type": "ListItem", "position": 2, "name": "Play", "item": "https://veck.app/play/"}
+      ]
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="/">
+        <img class="brand-logo" src="/assets/img/veck-icon.svg" alt="Veck.io logo on veck.app" width="28" height="28">
+        <span>veck.app</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="/">Home</a>
+        <a class="active" href="/play/">Play</a>
+        <a href="/settings/">Settings</a>
+        <a href="/guides/">Guides</a>
+        <a href="/news/">News</a>
+        <a href="/faq/">FAQ</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="card">
+          <div class="play-toolbar">
+            <h1 class="play-title-large">Play Veck.io</h1>
+            <button type="button" class="btn btn-secondary btn-icon" data-fullscreen-btn data-fullscreen-target="#iframehtml5" aria-label="Fullscreen">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M3 10V3h7v2H5v5H3Zm16 0V5h-5V3h7v7h-2ZM3 21v-7h2v5h5v2H3Zm16 0h-7v-2h5v-5h2v7Z"/>
+              </svg>
+              <span>Fullscreen</span>
+            </button>
+          </div>
+          <p class="muted">Wrapper source: <code>https://veckio.io/veck-io.embed</code></p>
+          <div class="play-shell">
+            <iframe id="iframehtml5" class="game-iframe" src="https://veckio.io/veck-io.embed" title="Play Veck.io" frameborder="0" scrolling="auto" loading="eager" allowfullscreen></iframe>
+          </div>
+          <div class="notice">If the embedded frame is blank, refresh and try again. Then use <a href="/faq/">FAQ</a> for troubleshooting.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="muted">Unofficial fan site. Not affiliated with the original game publisher.</p>
+      <p class="muted">© <span data-year></span> veck.app</p>
+    </div>
+  </footer>
+  <script src="/assets/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Veck IO Embed</title>
+  <style>
+    html,body{margin:0;padding:0;background:#0c1424;height:100%}
+    iframe{display:block;width:100%;height:100vh;border:0}
+  </style>
+</head>
+<body>
+  <iframe src="https://veck.io/" title="Veck IO" allowfullscreen></iframe>
+</body>
+</html>
