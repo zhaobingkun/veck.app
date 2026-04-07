@@ -280,6 +280,48 @@ a:hover { text-decoration: underline; }
   gap: 1rem;
 }
 
+.compact-stack {
+  gap: 0.75rem;
+}
+
+.feature-link {
+  display: block;
+  padding: 0.85rem 0.95rem;
+  border: 1px solid #2f456d;
+  border-radius: 12px;
+  background: rgba(18, 31, 53, 0.58);
+  color: var(--text);
+}
+
+.feature-link strong,
+.feature-link span {
+  display: block;
+}
+
+.feature-link span {
+  margin-top: 0.3rem;
+  color: var(--muted);
+}
+
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+
+.section-head h2 {
+  margin: 0;
+}
+
 .prose h1,
 .prose h2,
 .prose h3 {
@@ -287,6 +329,62 @@ a:hover { text-decoration: underline; }
 }
 
 .prose ul { margin-top: 0.4rem; }
+
+.eyebrow {
+  margin: 0 0 0.45rem;
+  color: #9edcff;
+  font-size: 0.86rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.article-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(260px, 0.9fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.article-main,
+.article-side {
+  min-width: 0;
+}
+
+.article-lead {
+  font-size: 1.08rem;
+  color: #dbe8ff;
+}
+
+.article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0 0 1.1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.callout {
+  margin-top: 1.2rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid #33507f;
+  border-radius: 12px;
+  background: rgba(95, 199, 255, 0.08);
+}
+
+.link-list {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.link-list li + li {
+  margin-top: 0.6rem;
+}
+
+.link-list-spaced li + li {
+  margin-top: 0.8rem;
+}
 
 .social-row {
   display: flex;
@@ -330,6 +428,10 @@ a:hover { text-decoration: underline; }
   .cards-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .article-shell,
+  .section-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 900px) {
@@ -343,4 +445,7 @@ a:hover { text-decoration: underline; }
   .btn { width: 100%; }
   .btn-row .btn { justify-content: center; }
   .play-toolbar { align-items: flex-start; flex-direction: column; }
+  .feature-link {
+    padding: 0.75rem 0.8rem;
+  }
 }
