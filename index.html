@@ -93,53 +93,77 @@
 
   <main>
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="card">
-          <span class="kicker">Veck.io Content Hub</span>
-          <h1>Play Veck.io and get useful help fast</h1>
-          <p class="muted">Use veck.app to jump into Veck.io, troubleshoot common loading problems, and read straightforward notes on setup, warmup, movement, aim, and loadouts.</p>
-          <div class="btn-row">
-            <a class="btn btn-primary" href="/play/">Play Veck.io</a>
-            <a class="btn btn-secondary" href="/guides/blank-screen-fix/">Fix Blank Screen</a>
+      <div class="container hero-grid home-hero-grid">
+        <aside class="stack compact-stack home-intro-stack">
+          <div class="card">
+            <span class="kicker">Veck.io Content Hub</span>
+            <h1>Play first</h1>
+            <p class="muted">The homepage now opens straight into the game window. If the embed stalls, use the dedicated play page or the fix guides below.</p>
+            <div class="btn-row">
+              <a class="btn btn-primary" href="/play/">Open Dedicated Play Page</a>
+              <a class="btn btn-secondary" href="/guides/blank-screen-fix/">Fix Blank Screen</a>
+            </div>
+            <div class="chip-row" aria-label="Popular searches">
+              <span class="chip">veck.io settings</span>
+              <span class="chip">veck.io controls</span>
+              <span class="chip">veck.io keybinds</span>
+              <span class="chip">veck.io aim guide</span>
+              <span class="chip">veck.io beginner tips</span>
+              <span class="chip">veck.io movement guide</span>
+              <span class="chip">veck.io crosshair</span>
+              <span class="chip">veck.io warmup</span>
+              <span class="chip">veck.io blank screen fix</span>
+              <span class="chip">veck.io lag fix</span>
+            </div>
           </div>
-          <div class="chip-row" aria-label="Popular searches">
-            <span class="chip">veck.io settings</span>
-            <span class="chip">veck.io controls</span>
-            <span class="chip">veck.io keybinds</span>
-            <span class="chip">veck.io aim guide</span>
-            <span class="chip">veck.io beginner tips</span>
-            <span class="chip">veck.io movement guide</span>
-            <span class="chip">veck.io crosshair</span>
-            <span class="chip">veck.io warmup</span>
-            <span class="chip">veck.io blank screen fix</span>
-            <span class="chip">veck.io lag fix</span>
+          <div class="card">
+            <h2>Start Here</h2>
+            <div class="stack compact-stack">
+              <a class="feature-link" href="/guides/beginner-setup-checklist/">
+                <strong>Beginner Setup Checklist</strong>
+                <span>Lock sensitivity, fullscreen, and keybind basics first.</span>
+              </a>
+              <a class="feature-link" href="/guides/3-phase-warmup/">
+                <strong>3-Phase Warmup</strong>
+                <span>Tracking, flicks, and movement aim in one repeatable order.</span>
+              </a>
+              <a class="feature-link" href="/guides/map-route-priority/">
+                <strong>Map Route Priority</strong>
+                <span>Reduce bad first contacts with safer routes and exits.</span>
+              </a>
+              <a class="feature-link" href="/faq/">
+                <strong>FAQ</strong>
+                <span>Quick answers for fullscreen, settings, and match basics.</span>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <h2>Start Here</h2>
-          <div class="stack compact-stack">
-            <a class="feature-link" href="/guides/beginner-setup-checklist/">
-              <strong>Beginner Setup Checklist</strong>
-              <span>Lock sensitivity, fullscreen, and keybind basics first.</span>
-            </a>
-            <a class="feature-link" href="/guides/3-phase-warmup/">
-              <strong>3-Phase Warmup</strong>
-              <span>Tracking, flicks, and movement aim in one repeatable order.</span>
-            </a>
-            <a class="feature-link" href="/guides/map-route-priority/">
-              <strong>Map Route Priority</strong>
-              <span>Reduce bad first contacts with safer routes and exits.</span>
-            </a>
-            <a class="feature-link" href="/faq/">
-              <strong>FAQ</strong>
-              <span>Quick answers for fullscreen, settings, and match basics.</span>
-            </a>
+        </aside>
+        <div class="card home-play-card" id="play-now">
+          <div class="play-toolbar">
+            <p class="play-title">Play Veck.io Now</p>
+            <button type="button" class="btn btn-secondary btn-icon" data-fullscreen-btn data-fullscreen-target="#iframehtml5" aria-label="Fullscreen">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M3 10V3h7v2H5v5H3Zm16 0V5h-5V3h7v7h-2ZM3 21v-7h2v5h5v2H3Zm16 0h-7v-2h5v-5h2v7Z"/>
+              </svg>
+              <span>Expand</span>
+            </button>
+          </div>
+          <h2>Instant Play</h2>
+          <p class="muted">If the embedded frame is unstable, switch to the <a href="/play/">dedicated play page</a> or use the <a href="/guides/blank-screen-fix/">blank-screen fix guide</a>.</p>
+          <div class="play-shell home-play-shell">
+            <button type="button" class="fullscreen-fab" data-fullscreen-btn data-fullscreen-target="#iframehtml5" aria-label="Open game in fullscreen">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M3 10V3h7v2H5v5H3Zm16 0V5h-5V3h7v7h-2ZM3 21v-7h2v5h5v2H3Zm16 0h-7v-2h5v-5h2v7Z"/>
+              </svg>
+              <span>Fullscreen</span>
+            </button>
+            <iframe id="iframehtml5" class="game-iframe home-game-iframe" src="https://veckio.io/veck-io.embed" width="100%" height="601" title="Play Veck.io" frameborder="0" border="0" scrolling="auto" loading="eager" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section home-content-start">
       <div class="container cards-grid">
         <article class="card guide-card">
           <p class="eyebrow">Featured Guide</p>
@@ -189,27 +213,6 @@
             <li><a href="/news/2026/03/mid-range-loadout-tuning-checklist/">Mid-range Loadout Tuning Checklist</a></li>
             <li><a href="/news/2026/03/entry-path-positioning-mistakes/">Entry-path Positioning Mistakes to Avoid</a></li>
           </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="play-now">
-      <div class="container">
-        <div class="card">
-          <div class="play-toolbar">
-            <p class="play-title">Play Veck.io Now</p>
-            <button type="button" class="btn btn-secondary btn-icon" data-fullscreen-btn data-fullscreen-target="#iframehtml5" aria-label="Fullscreen">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M3 10V3h7v2H5v5H3Zm16 0V5h-5V3h7v7h-2ZM3 21v-7h2v5h5v2H3Zm16 0h-7v-2h5v-5h2v7Z"/>
-              </svg>
-              <span>Fullscreen</span>
-            </button>
-          </div>
-          <h2>Instant Play</h2>
-          <p class="muted">If the embedded frame is unstable, switch to the <a href="/play/">dedicated play page</a> or use the <a href="/guides/blank-screen-fix/">blank-screen fix guide</a>.</p>
-          <div class="play-shell">
-            <iframe id="iframehtml5" class="game-iframe" src="https://veckio.io/veck-io.embed" width="100%" height="601" title="Play Veck.io" frameborder="0" border="0" scrolling="auto" loading="eager" allowfullscreen></iframe>
-          </div>
         </div>
       </div>
     </section>
