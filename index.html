@@ -96,28 +96,27 @@
       <div class="container hero-grid home-hero-grid">
         <aside class="stack compact-stack home-intro-stack">
           <div class="card">
-            <span class="kicker">Veck.io Content Hub</span>
-            <h1>Play first</h1>
-            <p class="muted">The homepage now opens straight into the game window. If the embed stalls, use the dedicated play page or the fix guides below.</p>
-            <div class="btn-row">
-              <a class="btn btn-primary" href="/play/">Open Dedicated Play Page</a>
-              <a class="btn btn-secondary" href="/guides/blank-screen-fix/">Fix Blank Screen</a>
+            <span class="kicker">Keyboard Controls</span>
+            <h1>Veck.io Keybinds</h1>
+            <p class="muted">Use this quick reference while playing. It covers the basic keyboard and mouse actions most players look for first.</p>
+            <div class="control-list" aria-label="Veck.io keyboard controls">
+              <div class="control-item"><span class="control-key">W / A / S / D</span><span class="control-action">Move</span></div>
+              <div class="control-item"><span class="control-key">LMB</span><span class="control-action">Shoot</span></div>
+              <div class="control-item"><span class="control-key">RMB / E</span><span class="control-action">Aim</span></div>
+              <div class="control-item"><span class="control-key">R</span><span class="control-action">Reload</span></div>
+              <div class="control-item"><span class="control-key">Mouse</span><span class="control-action">Look Around</span></div>
+              <div class="control-item"><span class="control-key">C / LeftShift</span><span class="control-action">Crouch</span></div>
+              <div class="control-item"><span class="control-key">Tab</span><span class="control-action">View Leaderboard</span></div>
+              <div class="control-item"><span class="control-key">M</span><span class="control-action">Switch Weapons</span></div>
+              <div class="control-item"><span class="control-key">V</span><span class="control-action">Inspect</span></div>
             </div>
-            <div class="chip-row" aria-label="Popular searches">
-              <span class="chip">veck.io settings</span>
-              <span class="chip">veck.io controls</span>
-              <span class="chip">veck.io keybinds</span>
-              <span class="chip">veck.io aim guide</span>
-              <span class="chip">veck.io beginner tips</span>
-              <span class="chip">veck.io movement guide</span>
-              <span class="chip">veck.io crosshair</span>
-              <span class="chip">veck.io warmup</span>
-              <span class="chip">veck.io blank screen fix</span>
-              <span class="chip">veck.io lag fix</span>
+            <div class="btn-row">
+              <a class="btn btn-primary" href="/settings/">Open Full Settings</a>
+              <a class="btn btn-secondary" href="/guides/keybinds/">Read Keybind Guide</a>
             </div>
           </div>
           <div class="card">
-            <h2>Start Here</h2>
+            <h2>Quick Start Links</h2>
             <div class="stack compact-stack">
               <a class="feature-link" href="/guides/beginner-setup-checklist/">
                 <strong>Beginner Setup Checklist</strong>
@@ -150,6 +149,9 @@
           </div>
           <h2>Instant Play</h2>
           <p class="muted">If the embedded frame is unstable, switch to the <a href="/play/">dedicated play page</a> or use the <a href="/guides/blank-screen-fix/">blank-screen fix guide</a>.</p>
+          <div class="btn-row">
+            <a class="btn btn-secondary" href="#daily-kill-leaderboard">Jump to Kill Leaderboard</a>
+          </div>
           <div class="play-shell home-play-shell">
             <button type="button" class="fullscreen-fab" data-fullscreen-btn data-fullscreen-target="#iframehtml5" aria-label="Open game in fullscreen">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -158,6 +160,33 @@
               <span>Fullscreen</span>
             </button>
             <iframe id="iframehtml5" class="game-iframe home-game-iframe" src="https://veckio.io/veck-io.embed" width="100%" height="601" title="Play Veck.io" frameborder="0" border="0" scrolling="auto" loading="eager" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="leaderboard-shell card" id="daily-kill-leaderboard">
+          <div class="section-head leaderboard-head">
+            <div>
+              <p class="eyebrow">Daily Leaderboard</p>
+              <h2 data-leaderboard-title>Top 10 Kill Leaders</h2>
+            </div>
+            <p class="muted leaderboard-note" data-leaderboard-updated>Updated April 10, 2026. Demo data for layout testing.</p>
+          </div>
+          <div class="leaderboard-table-wrap">
+            <table class="leaderboard-table" aria-label="Top 10 kill leaderboard">
+              <thead>
+                <tr>
+                  <th scope="col">Rank</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Player</th>
+                  <th scope="col">Kills</th>
+                </tr>
+              </thead>
+              <tbody data-leaderboard-body></tbody>
+            </table>
           </div>
         </div>
       </div>
