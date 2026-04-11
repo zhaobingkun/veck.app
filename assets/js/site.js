@@ -22,17 +22,14 @@
     data.entries.slice(0, 10).forEach(function (entry, index) {
       var row = document.createElement('tr');
       var rankCell = document.createElement('td');
-      var dateCell = document.createElement('td');
       var playerCell = document.createElement('td');
       var killsCell = document.createElement('td');
 
       rankCell.textContent = '#' + String(index + 1);
-      dateCell.textContent = data.updated_at || '-';
       playerCell.textContent = entry.player || 'Unknown';
       killsCell.textContent = String(entry.kills || 0);
 
       row.appendChild(rankCell);
-      row.appendChild(dateCell);
       row.appendChild(playerCell);
       row.appendChild(killsCell);
       body.appendChild(row);

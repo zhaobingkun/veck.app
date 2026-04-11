@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-04-10",
+  "updated_at": "2026-04-11",
   "title": "Top 10 Kill Leaders",
   "entries": [
-    { "player": "NovaRecoil", "kills": 198 },
-    { "player": "PeakRunner", "kills": 191 },
-    { "player": "HexDrift", "kills": 184 },
-    { "player": "SilentLatch", "kills": 176 },
-    { "player": "ArcMason", "kills": 169 },
-    { "player": "VantaQuick", "kills": 161 },
-    { "player": "SteelOrbit", "kills": 149 },
-    { "player": "CruxBloom", "kills": 138 },
-    { "player": "RiftCinder", "kills": 126 },
-    { "player": "EchoMelt", "kills": 114 }
+    { "player": "NovaRecoil", "kills": 196 },
+    { "player": "PeakRunner", "kills": 188 },
+    { "player": "HexDrift", "kills": 183 },
+    { "player": "SilentLatch", "kills": 174 },
+    { "player": "ArcMason", "kills": 168 },
+    { "player": "VantaQuick", "kills": 159 },
+    { "player": "SteelOrbit", "kills": 147 },
+    { "player": "CruxBloom", "kills": 136 },
+    { "player": "RiftCinder", "kills": 124 },
+    { "player": "EchoMelt", "kills": 112 }
   ]
 }

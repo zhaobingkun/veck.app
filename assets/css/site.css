@@ -73,6 +73,12 @@ a:hover { text-decoration: underline; }
 .nav-links a.active { color: var(--accent-2); }
 
 .hero { padding: 2rem 0 1.2rem; }
+.hero .container,
+.home-content-start .container,
+main > .section .container {
+  width: min(1400px, 90%);
+}
+
 .hero-grid {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
@@ -101,6 +107,13 @@ a:hover { text-decoration: underline; }
 .home-play-shell {
   flex: 1 1 auto;
   min-height: 0;
+}
+
+.home-play-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(270px, 0.55fr);
+  gap: 0.85rem;
+  align-items: stretch;
 }
 
 .home-game-iframe {
@@ -421,6 +434,10 @@ a:hover { text-decoration: underline; }
   padding: 1.1rem;
 }
 
+.leaderboard-shell-compact {
+  min-width: 0;
+}
+
 .leaderboard-head {
   margin-bottom: 1rem;
 }
@@ -471,6 +488,15 @@ a:hover { text-decoration: underline; }
 .leaderboard-table tbody tr:nth-child(3) td {
   color: #ffffff;
   font-weight: 700;
+}
+
+.leaderboard-table-compact {
+  min-width: 0;
+}
+
+.leaderboard-table-compact th,
+.leaderboard-table-compact td {
+  padding: 0.68rem 0.72rem;
 }
 
 .section-grid {
@@ -611,6 +637,7 @@ a:hover { text-decoration: underline; }
   .home-intro-stack { order: 2; }
   .home-play-card { order: 1; }
   .home-play-card { min-height: auto; }
+  .home-play-grid { grid-template-columns: 1fr; }
   .home-game-iframe { min-height: 60vh; }
 }
 
