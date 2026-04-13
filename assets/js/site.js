@@ -14,7 +14,7 @@
     }
 
     if (updated && data.updated_at) {
-      updated.textContent = 'Updated ' + data.updated_at + '. Demo data for layout testing.';
+      updated.textContent = 'Updated ' + data.updated_at + '.';
     }
 
     body.innerHTML = '';

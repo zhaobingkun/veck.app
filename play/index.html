@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Play Veck.io in Fullscreen | veck.app</title>
-  <meta name="description" content="Play Veck.io in embedded or fullscreen mode. Quick launch, low friction, and direct access from veck.app.">
+  <title>Play Veck.io Online in a Cleaner Wrapper | veck.app</title>
+  <meta name="description" content="Play Veck.io online in a cleaner wrapper with fullscreen support, direct launch access, and links to blank-screen and fullscreen fixes.">
   <link rel="canonical" href="https://veck.app/play/">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Play Veck.io in Fullscreen | veck.app">
-  <meta property="og:description" content="Launch Veck.io instantly with fullscreen support.">
+  <meta property="og:title" content="Play Veck.io Online in a Cleaner Wrapper | veck.app">
+  <meta property="og:description" content="Launch Veck.io in a cleaner wrapper with fullscreen support and direct troubleshooting links.">
   <meta property="og:url" content="https://veck.app/play/">
   <link rel="stylesheet" href="/assets/css/site.css">
   <link rel="icon" type="image/svg+xml" href="/assets/img/veck-icon.svg">
@@ -21,6 +21,15 @@
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://veck.app/"},
         {"@type": "ListItem", "position": 2, "name": "Play", "item": "https://veck.app/play/"}
       ]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Play Veck.io",
+      "url": "https://veck.app/play/",
+      "description": "Dedicated Veck.io play wrapper with fullscreen support and troubleshooting links."
     }
   </script>
 </head>
@@ -57,6 +66,7 @@
               <span>Fullscreen</span>
             </button>
           </div>
+          <p class="muted">This page is the cleanest wrapper on veck.app. Use it when the homepage embed feels unstable, when you want a direct fullscreen launch flow, or when you are testing whether a blank-screen issue belongs to the homepage or to the wrapper itself.</p>
           <p class="muted">Wrapper source: <code>https://veckio.io/veck-io.embed</code></p>
           <div class="play-shell">
             <iframe id="iframehtml5" class="game-iframe" src="https://veckio.io/veck-io.embed" title="Play Veck.io" frameborder="0" scrolling="auto" loading="eager" allowfullscreen></iframe>
@@ -70,6 +80,7 @@
       <div class="container section-grid">
         <div class="card">
           <h2>Need Help Before Queueing?</h2>
+          <p class="muted">These are the highest-signal pages to use when the issue is not your aim or settings, but the wrapper, fullscreen, or browser behavior around Veck.io.</p>
           <ul class="link-list link-list-spaced">
             <li><a href="/guides/blank-screen-fix/">Veck.io Blank Screen Fix</a></li>
             <li><a href="/guides/fullscreen-not-working/">Veck.io Fullscreen Not Working Fix</a></li>
@@ -80,6 +91,7 @@
         </div>
         <div class="card">
           <h2>Quick Reference</h2>
+          <p class="muted">If the game launches correctly here, you have already ruled out part of the problem. That makes this page useful as both a play page and a troubleshooting checkpoint.</p>
           <ul class="link-list link-list-spaced">
             <li><a href="/settings/">Settings and keybinds</a></li>
             <li><a href="/guides/settings-explained/">Settings explained</a></li>
@@ -90,6 +102,21 @@
             <li><a href="/guides/lag-fix/">Lag fix guide</a></li>
             <li><a href="/faq/">Common Veck.io questions</a></li>
           </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container section-grid">
+        <div class="card prose">
+          <p class="eyebrow">Why This Page Exists</p>
+          <h2>Use this page to separate launch issues from page-layout issues</h2>
+          <p>Some users search for a direct Veck.io play page because the homepage embed, browser extensions, or fullscreen timing create confusion about where the real failure lives. The dedicated play page strips that problem down to a simpler wrapper and makes debugging much faster.</p>
+        </div>
+        <div class="card prose">
+          <p class="eyebrow">Best Next Step</p>
+          <h2>If this page works, keep your next changes small</h2>
+          <p>When Veck.io opens correctly here, avoid changing five things at once. Test fullscreen after load, compare one browser if needed, and use the <a href="/guides/blank-screen-fix/">blank-screen guide</a> or <a href="/guides/fullscreen-not-working/">fullscreen guide</a> depending on where the failure starts.</p>
         </div>
       </div>
     </section>
